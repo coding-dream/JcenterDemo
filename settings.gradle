@@ -1,1 +1,2 @@
-include ':app', ':jtool'
+rootProject.name = "nonoKt"
+include ':app'

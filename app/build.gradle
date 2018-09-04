@@ -5,14 +5,16 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion Android.compileSdkVersion
+
     defaultConfig {
-        applicationId "org.live.jcenterdemo"
-        minSdkVersion 16
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        applicationId Android.applicationId
+        minSdkVersion Android.minSdkVersion
+        targetSdkVersion Android.targetSdkVersion
+        versionCode Android.versionCode
+        versionName Android.versionName
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -24,6 +26,9 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation project(':jtool')
+    implementation DepHelper.constraint_layout
+    implementation DepHelper.appcompat_v7
+    implementation DepHelper.support_v4
+    implementation DepHelper.recyclerview_v7
+    implementation DepHelper.cardview_v7
 }
