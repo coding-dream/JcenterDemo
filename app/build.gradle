@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion Android.compileSdkVersion
 
@@ -31,4 +33,12 @@ dependencies {
     implementation DepHelper.support_v4
     implementation DepHelper.recyclerview_v7
     implementation DepHelper.cardview_v7
+
+    // lifecycle(v7 already have lifecycle, just use room)
+    implementation DepHelper.lifecycle_runtime_room
+    implementation DepHelper.lifecycle_common_room
+    kapt DepHelper.annotationProcessor_lifecycle_compiler_room
+
+    // eventbus
+    implementation DepHelper.eventbus
 }
