@@ -12,15 +12,21 @@ object Android {
     val targetSdkVersion = 23
     val versionCode = 1
     val versionName = "1.0.0"
-    val applicationId = "com.live.nonokt"
+    val applicationId = "org.live.nonokt"
 
     val androidSupportSdkVersion = "27.1.0"
     val archLifecycleVersion = "1.0.0"
     val archRoomVersion = "1.0.0"
     val butterknife = "8.8.1"
+    val kotlin_version = "1.2.50"
 }
 
 object DepHelper {
+    val gradle_wrapper = "https\\://services.gradle.org/distributions/gradle-4.4-all.zip"
+    val plugin_gradle = "com.android.tools.build:gradle:3.1.4"
+
+    val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Android.kotlin_version}"
+    val plugin_kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Android.kotlin_version}"
 
     // support
     val support_v4 = "com.android.support:support-v4:${Android.androidSupportSdkVersion}"
@@ -83,7 +89,7 @@ object DepHelper {
     // java-web-socket
     var java_websocket = "org.java-websocket:Java-WebSocket:1.3.9"
 
-    // butterknife
+    // butterknife(app模块不需要应用插件)
     var butterknife = "com.jakewharton:butterknife:${Android.butterknife}"
     var annotationProcessor_butterknife = "com.jakewharton:butterknife-compiler:${Android.butterknife}"
 

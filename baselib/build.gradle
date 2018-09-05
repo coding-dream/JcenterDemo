@@ -1,4 +1,4 @@
-NonoHelperKt.applyType(getProject(), NonoHelperKt.plugin_application)
+NonoHelperKt.applyType(getProject(), NonoHelperKt.plugin_library)
 apply plugin: NonoHelperKt.plugin_type
 
 apply plugin: 'kotlin-android'
@@ -11,10 +11,6 @@ android {
     compileSdkVersion Android.compileSdkVersion
 
     defaultConfig {
-        // 设置一些变量供Code使用(注意下面字符串的引用格式)
-        buildConfigField "String", "plugin_type", '"isModule"'
-
-        applicationId Android.applicationId
         minSdkVersion Android.minSdkVersion
         targetSdkVersion Android.targetSdkVersion
         versionCode Android.versionCode
@@ -35,26 +31,27 @@ android {
 
     sourceSets {
         main {
+            // 小心坑: manifest一定是小写(gradle可能会变成大写)
             manifest.srcFile NonoHelperKt.sourceManifest
         }
     }
 }
 
-
-task aprintMe {
-    doLast {
-        println "=======> it's me"
-    }
-}
-
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation DepHelper.kotlin
-    implementation DepHelper.appcompat_v7
-    implementation DepHelper.constraint_layout
-
-    // 主项目的依赖,不需要的模块注释即可
-    // implementation project(':module1')
-    // implementation project(':module2')
-    // implementation project(':module3')
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api DepHelper.kotlin
+    api DepHelper.constraint_layout
+    api DepHelper.appcompat_v7
+    api DepHelper.support_v4
+    api DepHelper.recyclerview_v7
+    api DepHelper.cardview_v7
+    // lifecycle(v7 already have lifecycle, just use room)
+    api DepHelper.lifecycle_runtime_room
+    api DepHelper.lifecycle_common_room
+    kapt DepHelper.annotationProcessor_lifecycle_compiler_room
+    // eventbus
+    api DepHelper.eventbus
+    // butterknife
+    api DepHelper.butterknife
+    kapt DepHelper.annotationProcessor_butterknife
 }
