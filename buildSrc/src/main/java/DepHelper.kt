@@ -1,5 +1,9 @@
 /**
  * Created by wl on 2018/9/4.
+ *
+ * 注意:
+ * 在library或app中使用kapt时候的前提是 apply plugin: 'kotlin-android'
+ * 如果没有则使用默认的annotationProcessor代替
  */
 object Android {
     val compileSdkVersion = 28
@@ -80,8 +84,8 @@ object DepHelper {
     var java_websocket = "org.java-websocket:Java-WebSocket:1.3.9"
 
     // butterknife
-    var butterknife = "com.jakewharton:butterknife-compiler:${Android.butterknife}"
-    var annotationProcessor_butterknife = "com.jakewharton:butterknife:${Android.butterknife}"
+    var butterknife = "com.jakewharton:butterknife:${Android.butterknife}"
+    var annotationProcessor_butterknife = "com.jakewharton:butterknife-compiler:${Android.butterknife}"
 
     // router
     var arouter_api = "com.alibaba:arouter-api:1.2.4"

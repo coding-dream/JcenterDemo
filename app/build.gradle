@@ -17,11 +17,22 @@ android {
         versionName Android.versionName
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+}
+
+task aprintMe {
+    doLast {
+        println "=======> it's me"
     }
 }
 
@@ -33,12 +44,14 @@ dependencies {
     implementation DepHelper.support_v4
     implementation DepHelper.recyclerview_v7
     implementation DepHelper.cardview_v7
-
     // lifecycle(v7 already have lifecycle, just use room)
     implementation DepHelper.lifecycle_runtime_room
     implementation DepHelper.lifecycle_common_room
     kapt DepHelper.annotationProcessor_lifecycle_compiler_room
-
     // eventbus
     implementation DepHelper.eventbus
+    // butterknife
+    implementation DepHelper.butterknife
+    kapt DepHelper.annotationProcessor_butterknife
+    implementation project(':baselib')
 }
