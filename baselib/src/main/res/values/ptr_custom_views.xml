@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 以下是一些自定义控件用到的字符串定义  -->
+    <!-- 自定义View: PullToRefreshView-->
+    <string name="ptr_pull_down">Pull Down</string>
+    <string name="ptr_pull_down_to_refresh">Pull Down To Refresh</string>
+    <string name="ptr_release_to_refresh">Release To Refresh</string>
+    <string name="ptr_refreshing">Refresh&#8230;</string>
+    <string name="ptr_refresh_complete">Refresh Complete</string>
+    <string name="ptr_last_update">Last Update:&#160;</string>
+    <string name="ptr_seconds_ago">&#160;seconds ago</string>
+    <string name="ptr_minutes_ago">&#160;minutes ago</string>
+    <string name="ptr_hours_ago">&#160;hours ago</string>
+</resources>

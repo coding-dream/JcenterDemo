@@ -1,5 +1,6 @@
 package org.live.test
 
+import android.graphics.drawable.LayerDrawable
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -25,5 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         tv_msg.setOnClickListener { toast("click me") }
         tv_msg.setTextColor(TextColorHelper.createColorStateList(this, R.color.bg_red, R.color.bg_blue))
+
     }
 }

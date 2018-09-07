@@ -5,6 +5,7 @@ import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.StateListDrawable
 import android.support.annotation.ColorRes
+import android.support.annotation.DrawableRes
 import android.view.View
 
 
@@ -47,6 +48,13 @@ class DrawableCreator {
 
     fun createColorDrawable(context: Context, @ColorRes colorId: Int): ColorDrawable {
         return ColorDrawable(context.resources.getColor(colorId))
+    }
+
+    /**
+     * 从xml中加载Drawable对象,然后再修改对应属性
+     */
+    fun createDefaultDrawable(context: Context, @DrawableRes id: Int): Drawable? {
+        return context.getResources().getDrawable(id)
     }
 }
 
