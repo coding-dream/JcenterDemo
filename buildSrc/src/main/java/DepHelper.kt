@@ -18,7 +18,7 @@ object Android {
     val archLifecycleVersion = "1.0.0"
     val archRoomVersion = "1.0.0"
     val butterknife = "8.8.1"
-    val kotlin_version = "1.2.50"
+    val kotlin_version = "1.2.61"
 }
 
 object DepHelper {
