@@ -2,7 +2,7 @@
     package="org.live.test" >
 
     <application>
-        <activity android:name=".MainActivity"
+        <activity android:name=".LoadActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
