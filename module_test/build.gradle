@@ -40,4 +40,12 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':baselib')
+
+    implementation DepHelper.lifecycle_runtime
+    implementation DepHelper.lifecycle_extensions
+    kapt DepHelper.annotationProcessor_lifecycle_compiler
+
+    implementation DepHelper.lifecycle_runtime_room
+    implementation DepHelper.lifecycle_common_room
+    kapt DepHelper.annotationProcessor_lifecycle_compiler_room
 }

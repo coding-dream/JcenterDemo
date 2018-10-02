@@ -1,6 +1,6 @@
-include ':module_test'
 // 1. 可以直接使用 setting.gradle.kts来替代setting.gradle文件而不需要额外任何配置
 // 2. xx.gradle 和 xx.gradle.kts可以混合使用,就如同java和kotlin同存一样
 rootProject.name = "nonoKt"
 include "app"
 include "baselib"
+include ':module_test'

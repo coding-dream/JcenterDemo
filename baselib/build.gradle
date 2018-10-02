@@ -46,9 +46,9 @@ dependencies {
     api DepHelper.recyclerview_v7
     api DepHelper.cardview_v7
 
-    api DepHelper.lifecycle_runtime
-    api DepHelper.lifecycle_extensions
-    api DepHelper.annotationProcessor_lifecycle_compiler
+    // api DepHelper.lifecycle_runtime
+    // api DepHelper.lifecycle_extensions
+    // kapt DepHelper.annotationProcessor_lifecycle_compiler
 
     api DepHelper.lifecycle_runtime_room
     api DepHelper.lifecycle_common_room

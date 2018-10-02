@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.live.baselib.rvsample;
+package org.live.baselib.base;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
