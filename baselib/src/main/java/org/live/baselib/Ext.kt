@@ -11,7 +11,3 @@ import android.widget.Toast
 fun AppCompatActivity.toast(str: String, duration: Int = Toast.LENGTH_LONG) {
     Toast.makeText(this, str, duration).show()
 }
-
-object Helper{
-
-}

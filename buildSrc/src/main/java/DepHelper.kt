@@ -15,8 +15,8 @@ object Android {
     val applicationId = "org.live.nonokt"
 
     val androidSupportSdkVersion = "27.1.0"
-    val archLifecycleVersion = "1.0.0"
-    val archRoomVersion = "1.0.0"
+    val archLifecycleVersion = "1.1.1"
+    val archRoomVersion = "1.1.1"
     val butterknife = "8.8.1"
     val kotlin_version = "1.2.61"
 }
@@ -27,6 +27,9 @@ object DepHelper {
 
     val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Android.kotlin_version}"
     val plugin_kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Android.kotlin_version}"
+
+    // anko 里面存在很多写的不错的kotlin工具类
+    val anko = "org.jetbrains.anko:anko-commons:0.10.0"
 
     // support
     val support_v4 = "com.android.support:support-v4:${Android.androidSupportSdkVersion}"
@@ -61,13 +64,13 @@ object DepHelper {
     var annotationProcessor_lifecycle_compiler_room = "android.arch.persistence.room:compiler:${Android.archRoomVersion}"
 
     // rxjava2
-    var rxjava_adapter = "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
-    var rxjava_okhttp = "com.squareup.okhttp3:okhttp:3.9.0"
-    var rxjava_logging_interceptor = "com.squareup.okhttp3:logging-interceptor:3.9.0"
-    var rxjava_android ="io.reactivex.rxjava2:rxandroid:2.0.1"
-    var rxjava = "io.reactivex.rxjava2:rxjava:2.1.3"
-    var rxjava_retrofit2 = "com.squareup.retrofit2:retrofit:2.3.0"
-    var rxjava_retrofit2_converter = "com.squareup.retrofit2:converter-gson:2.3.0"
+    var rxjava_adapter_v2 = "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
+    var rxjava_okhttp_v2 = "com.squareup.okhttp3:okhttp:3.9.0"
+    var rxjava_logging_interceptor_v2 = "com.squareup.okhttp3:logging-interceptor:3.9.0"
+    var rxjava_android_v2 ="io.reactivex.rxjava2:rxandroid:2.0.1"
+    var rxjava_v2 = "io.reactivex.rxjava2:rxjava:2.1.3"
+    var rxjava_retrofit_v2 = "com.squareup.retrofit2:retrofit:2.3.0"
+    var rxjava_retrofit_converter_v2 = "com.squareup.retrofit2:converter-gson:2.3.0"
 
     // rxjava1
     var rxjava_adapter_v1 = "com.squareup.retrofit2:adapter-rxjava:2.0.2"

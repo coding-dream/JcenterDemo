@@ -46,19 +46,35 @@ dependencies {
     api DepHelper.recyclerview_v7
     api DepHelper.cardview_v7
 
-    // api DepHelper.lifecycle_runtime
-    // api DepHelper.lifecycle_extensions
-    // kapt DepHelper.annotationProcessor_lifecycle_compiler
+    // Architecture components
+     api DepHelper.lifecycle_runtime
+     api DepHelper.lifecycle_extensions
+     kapt DepHelper.annotationProcessor_lifecycle_compiler
 
     api DepHelper.lifecycle_runtime_room
     api DepHelper.lifecycle_common_room
     kapt DepHelper.annotationProcessor_lifecycle_compiler_room
-    // eventbus
+
+    // EventBus
     api DepHelper.eventbus
-    // butterknife
+
+    // ButterKnife
     api DepHelper.butterknife
     kapt DepHelper.annotationProcessor_butterknife
     api DepHelper.multi_type
 
     api DepHelper.gson
+    api DepHelper.logger
+
+    // RxJava
+    api DepHelper.rxjava_adapter_v2
+    api DepHelper.rxjava_okhttp_v2
+    api DepHelper.rxjava_logging_interceptor_v2
+    api DepHelper.rxjava_android_v2
+    api DepHelper.rxjava_v2
+    api DepHelper.rxjava_retrofit_v2
+    api DepHelper.rxjava_retrofit_converter_v2
+
+    // Anko
+    api DepHelper.anko
 }
