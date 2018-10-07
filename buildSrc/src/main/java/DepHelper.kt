@@ -81,6 +81,8 @@ object DepHelper {
     var rxjava_retrofit_v1 = "com.squareup.retrofit2:retrofit:2.1.0"
     var rxjava_retrofit_converter_v1 = "com.squareup.retrofit2:converter-gson:2.0.2"
 
+    var rxkotlin = "io.reactivex.rxjava2:rxkotlin:2.3.0"
+
     var gson = "com.google.code.gson:gson:2.8.0"
 
     // ele 超赞的UE 工具

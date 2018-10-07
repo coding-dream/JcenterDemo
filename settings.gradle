@@ -3,4 +3,5 @@
 rootProject.name = "nonoKt"
 include "app"
 include "baselib"
+include "ui"
 include ':module_test'
