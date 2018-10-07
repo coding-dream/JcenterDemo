@@ -34,6 +34,12 @@ android {
             // 小心坑: manifest一定是小写(gradle可能会变成大写)
             manifest.srcFile NonoHelperKt.sourceManifest
         }
+        // 资源分类管理
+        main.res.srcDirs = [
+                'src/main/res',
+                'src/main/res-custom',
+                'src/main/res-me'
+        ]
     }
 }
 

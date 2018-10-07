@@ -16,7 +16,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(TextView(this))
+        val customView = CustomView(this)
+        setContentView(customView)
+
         val array = arrayListOf("1,", "2")
         array.toObservable()
                 .subscribeOn(Schedulers.io())
