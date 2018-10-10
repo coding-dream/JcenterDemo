@@ -121,7 +121,7 @@ object DepHelper {
     var greendao = "org.greenrobot:greendao:3.2.2"
 
     // baseRecyclerViewAdapterHelper
-    var BRVAH = "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22"
+    var BRVAH = "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42"
 
     // 6.0权限管理
     var easypermissions = "pub.devrel:easypermissions:1.3.0"

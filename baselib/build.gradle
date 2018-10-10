@@ -78,4 +78,9 @@ dependencies {
     // Anko
     api DepHelper.anko
     api DepHelper.rxkotlin
+
+    api DepHelper.BRVAH
+
+    // Glide
+    api DepHelper.glide
 }

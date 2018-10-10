@@ -14,5 +14,6 @@
             android:name=".TestActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleTop"/>
+        <activity android:name=".StaggeredGridActivity" />
     </application>
 </manifest>
