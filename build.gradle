@@ -10,6 +10,7 @@ buildscript {
     dependencies {
         classpath DepHelper.plugin_kotlin
         classpath DepHelper.plugin_gradle
+        classpath DepHelper.plugin_greendao
     }
 }
 

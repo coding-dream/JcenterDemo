@@ -83,4 +83,7 @@ dependencies {
 
     // Glide
     api DepHelper.glide
+
+    // GreenDao
+    api DepHelper.greendao
 }

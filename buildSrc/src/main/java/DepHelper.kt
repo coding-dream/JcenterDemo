@@ -19,11 +19,13 @@ object Android {
     val archRoomVersion = "1.1.1"
     val butterknife = "8.8.1"
     val kotlin_version = "1.2.61"
+    val greendao_version = "3.2.2"
 }
 
 object DepHelper {
     val gradle_wrapper = "https\\://services.gradle.org/distributions/gradle-4.4-all.zip"
     val plugin_gradle = "com.android.tools.build:gradle:3.1.4"
+    val plugin_greendao = "org.greenrobot:greendao-gradle-plugin:${Android.greendao_version}"
 
     val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Android.kotlin_version}"
     val plugin_kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Android.kotlin_version}"

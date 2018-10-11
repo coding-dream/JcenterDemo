@@ -7,6 +7,8 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
+apply plugin: 'org.greenrobot.greendao'
+
 android {
     compileSdkVersion Android.compileSdkVersion
 
@@ -40,4 +42,9 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':baselib')
+}
+
+greendao {
+    schemaVersion 1 // database version
+    daoPackage 'org.live.test.database.gen'
 }
