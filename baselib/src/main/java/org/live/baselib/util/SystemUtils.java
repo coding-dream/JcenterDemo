@@ -678,8 +678,6 @@ public class SystemUtils {
 //        return delta != 0;
 //    }
 
-
-
     /**
      * 是否进行沉浸式处理
      *
@@ -823,7 +821,6 @@ public class SystemUtils {
         } catch (Exception e) {
         }
     }
-
 
     /**
      * 读取RAW文件内容
@@ -1015,7 +1012,4 @@ public class SystemUtils {
         }
         return sensorState;
     }
-
-
-
 }

@@ -4,17 +4,17 @@
     <application
         android:name="App"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".TestActivity"
+            android:name=".activity.TestActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleTop"/>
-        <activity android:name=".StaggeredGridActivity" />
-        <activity android:name=".GreenDaoActivity" />
+        <activity android:name=".activity.StaggeredGridActivity" />
+        <activity android:name=".activity.GreenDaoActivity" />
     </application>
 </manifest>

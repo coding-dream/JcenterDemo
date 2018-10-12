@@ -1,4 +1,4 @@
-package org.live.test
+package org.live.test.activity
 
 import android.os.Bundle
 import android.os.Handler
@@ -7,6 +7,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import kotlinx.android.synthetic.main.activity_main.*
+import org.live.test.R
 
 /**
  * Created by wl on 2018/10/10.

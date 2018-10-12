@@ -1,9 +1,10 @@
-package org.live.test
+package org.live.test.activity
 
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_greendao.*
+import org.live.test.R
 import org.live.test.database.dao.CMessageDbHelper
 import org.live.test.database.entity.CMessage
 import java.util.*

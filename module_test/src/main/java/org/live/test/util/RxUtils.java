@@ -1,4 +1,4 @@
-package org.live.test;
+package org.live.test.util;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;

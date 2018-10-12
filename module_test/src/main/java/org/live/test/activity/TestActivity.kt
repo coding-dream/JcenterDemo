@@ -1,4 +1,4 @@
-package org.live.test
+package org.live.test.activity
 
 import android.app.Application
 import android.arch.lifecycle.*
@@ -11,6 +11,7 @@ import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import org.live.baselib.toast
+import org.live.test.R
 
 /**
  * Created by wl on 2018/9/5.
