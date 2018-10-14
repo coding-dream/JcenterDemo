@@ -16,5 +16,6 @@
             android:launchMode="singleTop"/>
         <activity android:name=".activity.StaggeredGridActivity" />
         <activity android:name=".activity.GreenDaoActivity" />
+        <activity android:name=".activity.HttpApiActivity" />
     </application>
 </manifest>

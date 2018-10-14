@@ -2,6 +2,7 @@ package org.live.test.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import org.jetbrains.anko.startActivity
 import org.live.test.R
 import org.live.test.widget.DialogSuccess
 
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val dialogSuccess = DialogSuccess(this)
         dialogSuccess.show()
-        // startActivity<GreenDaoActivity>()
+        startActivity<HttpApiActivity>()
     }
 }
 
