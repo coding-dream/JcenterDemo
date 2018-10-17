@@ -1,4 +1,4 @@
-NonoHelperKt.applyType(getProject(), NonoHelperKt.plugin_application)
+NonoHelperKt.applyType(getProject(), NonoHelperKt.plugin_library)
 apply plugin: NonoHelperKt.plugin_type
 
 apply plugin: 'kotlin-android'
@@ -38,7 +38,8 @@ android {
         main.res.srcDirs = [
                 'src/main/res',
                 'src/main/res-custom',
-                'src/main/res-me'
+                'src/main/res-me',
+                'src/main/res-rvpager'
         ]
     }
 }

@@ -1,0 +1,15 @@
+<LinearLayout android:id="@+id/iv_preview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    
+    <org.live.ui.FixScaleImageView
+        android:src="@drawable/pic_preview"
+        android:layout_width="270dp"
+        app:heightWidthRate="1.77"
+        app:widthStandard = "true"
+        android:layout_height="0dp"
+        />
+</LinearLayout>

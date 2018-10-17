@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val dialogSuccess = DialogSuccess(this)
         dialogSuccess.show()
-        startActivity<HttpApiActivity>()
+        startActivity<RvPagerActivityV2>()
     }
 }
 

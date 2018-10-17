@@ -4,6 +4,7 @@ import android.app.Application
 import android.arch.lifecycle.*
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearSnapHelper
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView

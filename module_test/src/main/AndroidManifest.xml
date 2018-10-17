@@ -17,5 +17,9 @@
         <activity android:name=".activity.StaggeredGridActivity" />
         <activity android:name=".activity.GreenDaoActivity" />
         <activity android:name=".activity.HttpApiActivity" />
+        <activity android:name=".activity.RvPagerActivity" />
+        <activity android:name=".activity.ViewPagerActivity" />
+        <activity android:name=".activity.TestUIActivity" />
+        <activity android:name=".activity.RvPagerActivityV2" />
     </application>
 </manifest>

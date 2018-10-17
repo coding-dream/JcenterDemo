@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <declare-styleable name="FixScaleImageView">
+        <attr name="heightWidthRate" format="float"/>
+        <attr name="widthStandard" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyTabLayout">
+        <attr name="indicatorWidth" format="dimension"/>
+        <attr name="indicatorHeight" format="dimension"/>
+        <attr name="indicatorColor" format="color"/>
+    </declare-styleable>
+</resources>
