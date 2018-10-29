@@ -21,5 +21,8 @@
         <activity android:name=".activity.ViewPagerActivity" />
         <activity android:name=".activity.TestUIActivity" />
         <activity android:name=".activity.RvPagerActivityV2" />
+        <activity android:name=".activity.SkinSupportActivity" />
+        <activity android:name=".activity.ObjectAnimatorActivity" />
+        <activity android:name=".activity.KtTestActivity" />
     </application>
 </manifest>

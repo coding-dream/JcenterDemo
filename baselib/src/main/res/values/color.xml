@@ -44,4 +44,59 @@
     <color name="alpha_90_black">#E6000000</color>
     <color name="alpha_95_black">#F2000000</color>
 
+
+    <color name="me_divider">#fff0f0f0</color>
+    <color name="divider">#ffe3e4e5</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="pink">#ffffe2e4</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="google_blue">#FF4285F4</color>
+    <color name="google_red">#FFEA4335</color>
+    <color name="google_green">#ff34A853</color>
+    <color name="google_yellow">#FFFBBC05</color>
+
+    <!-- 主题title黑色 -->
+    <color name="default_theme_title_001">#ff262626</color>
+    <!-- 所有红色 -->
+    <color name="default_theme_red_002">#ffe73b4b</color>
+    <color name="default_theme_red_003">#ffe33d3d</color>
+    <!-- 一级标题(名字/标题/输入框文字)颜色 -->
+    <color name="default_theme_text_003">#ff4c4b4b</color>
+    <!-- 二级标题/说明文字颜色 -->
+    <color name="default_theme_text_004">#ff898888</color>
+    <!-- 三级标题/输入框提示文字颜色 -->
+    <color name="default_theme_text_005">#ff9f9f9f</color>
+    <!-- 弹窗提示文字颜色 -->
+    <color name="default_theme_text_006">#ff7c7c7c</color>
+    <!-- 弹窗说明文字颜色 -->
+    <color name="default_theme_text_007">#ff6c6c6c</color>
+    <!-- 弹窗确认文字颜色 -->
+    <color name="default_theme_text_008">#ff3d92f1</color>
+    <!-- 按钮disable状态/列表分割线颜色 -->
+    <color name="default_theme_disable_006">#ffc7c7c7</color>
+    <color name="default_theme_divide_006">#fff0f0f0</color>
+    <color name="default_theme_divide_recycle">#ffc7c7c7</color>
+    <!-- 弹窗按钮颜色(蓝色) -->
+    <color name="default_theme_blue_007">#ff2d99f5</color>
+    <color name="default_theme_white">#fffeffff</color>
+    <color name="default_theme_text_second_white">#ffc6c7c8</color>
+    <color name="default_theme_content_bg">#ffebeced</color>
+    <color name="default_input_back_bg">#ffebeced</color>
+
+    <!--整体主题色，一般包括titlebar背景色和导航栏背景色-->
+    <color name="color_theme_background_color">#FFFFFF</color>
+    <!--导航栏文字颜色-->
+    <color name="color_title_bar_text_color">#4c4b4b</color>
+    <color name="color_title_bar_left_text_color">#4c4b4b</color>
+    <color name="color_title_bar_right_text_color">#4c4b4b</color>
+    <!--首页tab的背景颜色，换肤时替换这个颜色,如果换上图片，换肤apk中这个值设为透明-->
+    <color name="color_home_title_bg">#FFFFFF</color>
+    <!--首页video标签，tablayout文字颜色-->
+    <color name="color_video_tab_layout_title_selected">#ff262626</color>
+    <color name="color_video_tab_layout_title_unselected">#C8C8C8</color>
+    <color name="color_video_tab_layout_title_indicator">#ffe33d3d</color>
+
 </resources>

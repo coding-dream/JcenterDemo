@@ -12,4 +12,52 @@
         <attr name="indicatorHeight" format="dimension"/>
         <attr name="indicatorColor" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="TriangleView">
+        <attr name="tri_color" format="color"/>
+        <attr name="tri_location" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr format="reference" name="tb_title_action_img"/>
+        <attr format="string" name="tb_title_text"/>
+        <attr format="reference" name="tb_title_textColor"/>
+        <attr format="boolean" name="tb_title_text_color_auto"/>
+        <attr format="dimension" name="tb_title_textSize"/>
+        <attr format="enum" name="tb_title_textStyle">
+            <enum name="normal" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="italic" value="2"/>
+        </attr>
+        <attr format="reference" name="tb_left_action_img"/>
+        <attr format="string" name="tb_left_action_text"/>
+        <attr format="reference" name="tb_left_action_textColor"/>
+        <attr format="boolean" name="tb_left_text_color_auto"/>
+        <attr format="dimension" name="tb_left_action_textSize"/>
+        <attr format="enum" name="tb_left_action_textStyle">
+            <enum name="normal" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="italic" value="2"/>
+        </attr>
+        <attr format="dimension" name="tb_left_action_textPaddingLeft"/>
+        <attr format="dimension" name="tb_left_action_textPaddingRight"/>
+        <attr format="reference" name="tb_right_action_img"/>
+        <attr format="string" name="tb_right_action_text"/>
+        <attr format="reference" name="tb_right_action_textColor"/>
+        <attr format="boolean" name="tb_right_text_color_auto"/>
+        <attr format="dimension" name="tb_right_action_textSize"/>
+        <attr format="enum" name="tb_right_action_textStyle">
+            <enum name="normal" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="italic" value="2"/>
+        </attr>
+        <attr format="dimension" name="tb_right_action_textPaddingLeft"/>
+        <attr format="dimension" name="tb_right_action_textPaddingRight"/>
+        <attr format="boolean" name="tb_isSeparatorLine"/>
+        <attr format="color" name="tb_separatorLineColor"/>
+        <attr format="dimension" name="tb_separatorLineSize"/>
+        <attr format="boolean" name="tb_isAutoBackFinish"/>
+        <attr format="boolean" name="tb_is_show_bottom_separator"/>
+    </declare-styleable>
+
 </resources>

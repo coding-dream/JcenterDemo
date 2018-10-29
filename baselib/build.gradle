@@ -86,4 +86,7 @@ dependencies {
 
     // GreenDao
     api DepHelper.greendao
+
+    // 换肤测试
+    api DepHelper.skin_support
 }

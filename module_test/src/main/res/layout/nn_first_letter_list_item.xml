@@ -16,7 +16,7 @@
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_icon"
         tools:text="value 1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

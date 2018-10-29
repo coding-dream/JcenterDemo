@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TitleBarDefaultStyle">
+        <item name="tb_title_textColor">@color/default_theme_title_001</item>
+        <item name="tb_title_textSize">@dimen/text_size_16</item>
+        <item name="tb_title_textStyle">normal</item>
+
+        <item name="tb_left_action_img">@null</item>
+        <item name="tb_left_action_textColor">@color/default_theme_title_001</item>
+        <item name="tb_left_action_textSize">@dimen/text_size_16</item>
+        <item name="tb_left_action_textStyle">normal</item>
+        <item name="tb_left_action_textPaddingLeft">0dp</item>
+        <item name="tb_left_action_textPaddingRight">0dp</item>
+
+        <item name="tb_right_action_textColor">@color/default_theme_title_001</item>
+        <item name="tb_right_action_textSize">@dimen/text_size_16</item>
+        <item name="tb_right_action_textStyle">normal</item>
+        <item name="tb_right_action_textPaddingLeft">0dp</item>
+        <item name="tb_right_action_textPaddingRight">15dp</item>
+
+        <item name="tb_isSeparatorLine">false</item>
+        <item name="tb_separatorLineColor">#f0f0f0</item>
+        <item name="tb_separatorLineSize">1px</item>
+
+        <item name="tb_isAutoBackFinish">true</item>
+    </style>
+</resources>

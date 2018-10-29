@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_icon"
         android:text="hello"
         android:textColor="#fff"
         android:background="#f0f"

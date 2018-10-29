@@ -29,7 +29,7 @@ public class FixScaleImageView extends AppCompatImageView {
         super(context, attrs, defStyleAttr);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.FixScaleImageView, 0, 0);
         this.heightWidthRate = a.getFloat(R.styleable.FixScaleImageView_heightWidthRate, 0.0f);
-        widthStandard = a.getBoolean(R.styleable.FixScaleImageView_widthStandard,false);
+        widthStandard = a.getBoolean(R.styleable.FixScaleImageView_widthStandard,true);
         a.recycle();
     }
 

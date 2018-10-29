@@ -1,9 +1,6 @@
 package org.live.baselib.shape
 
-import android.graphics.Canvas
-import android.graphics.ColorFilter
-import android.graphics.Paint
-import android.graphics.PixelFormat
+import android.graphics.*
 import android.graphics.drawable.Drawable
 
 /**
@@ -14,7 +11,7 @@ import android.graphics.drawable.Drawable
  * 2. android.support.v7.widget.DrawableUtils
  * https://blog.csdn.net/yanbober/article/details/56844869
  */
-class CustomDrawable(val color: Int) : Drawable() {
+class CustomDrawable(val color: Int = Color.RED) : Drawable() {
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 

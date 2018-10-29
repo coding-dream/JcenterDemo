@@ -4,7 +4,6 @@ import android.app.Application
 import android.arch.lifecycle.*
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearSnapHelper
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -23,7 +22,7 @@ class TestActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
 
-        val tvName: TextView = findViewById<TextView>(R.id.tv_name)
+        val tvName: TextView = findViewById<TextView>(R.id.tv_icon)
         val lp: LinearLayout.LayoutParams  = tvName.layoutParams as LinearLayout.LayoutParams
         lp.leftMargin = 50
         lp.height = ViewGroup.LayoutParams.MATCH_PARENT

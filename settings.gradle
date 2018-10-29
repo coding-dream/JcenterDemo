@@ -5,3 +5,4 @@ include "app"
 include "baselib"
 include "ui"
 include ':module_test'
+include ':module_skin'

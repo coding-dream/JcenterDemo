@@ -136,4 +136,7 @@ object DepHelper {
 
     // banner
     var banner = "com.youth.banner:banner:1.4.10"
+
+    // skin_support
+    val skin_support = "skin.support:skin-support:3.1.0-beta1"
 }

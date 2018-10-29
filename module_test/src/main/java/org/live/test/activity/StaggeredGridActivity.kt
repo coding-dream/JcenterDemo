@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.StaggeredGridLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_staggered.*
 import org.live.test.R
 
 /**
@@ -19,7 +19,7 @@ class StaggeredGridActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_staggered)
         recycleView.adapter = myAdapter
         recycleView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         swipeRefreshLayout.setOnRefreshListener {
@@ -60,8 +60,8 @@ class MyAdapter(val datas: List<String> = ArrayList())
     : BaseQuickAdapter<String, BaseViewHolder>(R.layout.nn_first_letter_list_item, datas) {
 
     override fun convert(helper: BaseViewHolder, item: String) {
-        helper.addOnClickListener(R.id.tv_name)
-        helper.setText(R.id.tv_name, item)
+        helper.addOnClickListener(R.id.tv_icon)
+        helper.setText(R.id.tv_icon, item)
         helper.setText(R.id.tv_position, "layoutPosition: ${helper.layoutPosition}")
     }
 }

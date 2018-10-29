@@ -11,6 +11,6 @@ class TestUIActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.listitem_test)
+        setContentView(R.layout.activity_ui_test)
     }
 }
