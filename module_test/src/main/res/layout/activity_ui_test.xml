@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#ff0"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.live.ui.TriangleView
-        app:tri_location = "top"
-        android:layout_width="24dp"
-        android:layout_height="24dp" />
-
-    <ImageView
-        android:id="@+id/iv_preview"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:checked="true"
+        android:textOff=""
+        android:textOn=""
+        android:background="@drawable/nn_common_toggle_selector"
         />
-
 </android.support.constraint.ConstraintLayout>

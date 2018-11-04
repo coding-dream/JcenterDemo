@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import org.jetbrains.anko.startActivity
 import org.live.test.R
+import org.live.test.bean.TestUser
+import org.live.test.bean.User
 import skin.support.SkinCompatManager
 
 /**
@@ -17,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         SkinCompatManager.getInstance().loadSkin("module_skin-debug.skin", SkinCompatManager.SKIN_LOADER_STRATEGY_ASSETS)
-        startActivity<SkinSupportActivity>()
+        val user = TestUser("Jack")
+
+        startActivity<TabLayoutActivity>()
     }
 }

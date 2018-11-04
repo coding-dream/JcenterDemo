@@ -81,6 +81,14 @@ class ViewPagerActivity : AppCompatActivity() {
                 }
                 return 0.8f
             }
+
+            /**
+             * ViewPager不刷新的解决方式
+             * link: https://www.jianshu.com/p/266861496508
+             */
+            override fun getItemPosition(`object`: Any): Int {
+                return POSITION_NONE
+            }
         }
 
         viewPager.adapter = adapter

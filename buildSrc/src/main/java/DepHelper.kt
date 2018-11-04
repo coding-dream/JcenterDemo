@@ -14,7 +14,7 @@ object Android {
     val versionName = "1.0.0"
     val applicationId = "org.live.nonokt"
 
-    val androidSupportSdkVersion = "27.1.0"
+    val androidSupportSdkVersion = "28.0.0"
     val archLifecycleVersion = "1.1.1"
     val archRoomVersion = "1.1.1"
     val butterknife = "8.8.1"

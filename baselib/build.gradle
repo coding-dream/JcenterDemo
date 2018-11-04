@@ -89,4 +89,6 @@ dependencies {
 
     // 换肤测试
     api DepHelper.skin_support
+
+    api DepHelper.design
 }

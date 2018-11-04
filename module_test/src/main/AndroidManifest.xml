@@ -24,5 +24,6 @@
         <activity android:name=".activity.SkinSupportActivity" />
         <activity android:name=".activity.ObjectAnimatorActivity" />
         <activity android:name=".activity.KtTestActivity" />
+        <activity android:name=".activity.TabLayoutActivity" />
     </application>
 </manifest>
