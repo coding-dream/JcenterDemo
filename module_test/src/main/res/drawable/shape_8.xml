@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--
+    类似FrameLayout,最上面的在最底层
+    layer-list 一般作为背景图,所以一般下面自定义的shape都不需要指定大小,
+    而且layer-list会自动缩放至和View一样的大小
+    但是,如果View没有指定固定的大小(layer-list和普通图片没区别),
+    而是使用wrap_content作为View的宽高,那么layer-list中最大的图层将作为View的宽高.
+    因为每个item都是不相干的(都是相对于View做自适应),所以,
+    你想要通过设置layer-list中每个item的大小控制总体显示效果是错误的.
+
+    记住,每个item都是相对于View的,通过设置 left,top,right,bottom来达到你想要的效果吧.
+    -->
+    <item>
+        <shape>
+            <solid android:color="#10da13" />
+            <size android:width="150dp" android:height="150dp"/>
+        </shape>
+    </item>
+
+    <!-- 后面的item类似FrameLayout的上层, 其中top,bottom等表示相对于View的偏移量 -->
+    <item android:bottom="10dp"> <!--设置只有底部有边框-->
+        <shape>
+            <solid android:color="#f1b110" />
+            <!-- 下面的大小比上面小,所以小的失效了 -->
+            <size android:width="50dp" android:height="50dp"/>
+        </shape>
+    </item>
+</layer-list>

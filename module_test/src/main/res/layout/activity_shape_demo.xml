@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/shape_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:src="@drawable/shape_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/shape_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:src="@drawable/shape_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@drawable/shape_5"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:src="@drawable/shape_6"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <!-- 使用layer-list作为背景图 -->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_7"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <!-- 使用layer-list代为View大小 -->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

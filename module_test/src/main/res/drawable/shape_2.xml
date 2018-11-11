@@ -1,0 +1,8 @@
+<!-- 拥有大小的背景,当然如果设置了大小一定要width,height均设置,这里设置的大小相当于图片的大小,ImageView的wrap_content的大小也是此处设置的大小 -->
+<!-- 如果只设置height或者width,这里的PreView显示不正确,可以认为设置的为1dp -->
+<shape
+    android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#96400ee6"/>
+    <size android:width="160dp" android:height="160dp"/>
+</shape>

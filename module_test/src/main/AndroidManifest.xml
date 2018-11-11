@@ -10,10 +10,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.TestActivity"
-            android:screenOrientation="portrait"
-            android:launchMode="singleTop"/>
+        <activity android:name=".activity.TestActivity" />
         <activity android:name=".activity.StaggeredGridActivity" />
         <activity android:name=".activity.GreenDaoActivity" />
         <activity android:name=".activity.HttpApiActivity" />
@@ -25,5 +22,8 @@
         <activity android:name=".activity.ObjectAnimatorActivity" />
         <activity android:name=".activity.KtTestActivity" />
         <activity android:name=".activity.TabLayoutActivity" />
+        <activity android:name=".activity.SeekbarProgressActivity" />
+        <activity android:name=".activity.ShapeDrawableActivity" />
+        <activity android:name=".activity.SkillActivity" />
     </application>
 </manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:clipChildren="false"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:text="top"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <!--TODO 注意这个地方,clipChildren = false 的位置,而且超出范围的空间,wrap_content似乎会失效,此时最好设置固定的大小 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#ff003b"
+        app:layout_constraintTop_toBottomOf="@id/tv_top">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="inner text, default can't see all"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

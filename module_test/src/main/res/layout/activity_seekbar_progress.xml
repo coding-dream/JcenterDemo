@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 完整属性(无背景) -->
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:max="100"
+        android:maxHeight="1.5dp"
+        android:minHeight="1.5dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:thumbOffset="0dp"
+        android:progressDrawable="@drawable/nn_player_seek_progress"
+        android:thumb="@drawable/nn_player_seek_thumb"
+        />
+
+    <!-- 去除paddingStart,paddingEnd,thumbOffset属性后(无背景) -->
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:max="100"
+        android:maxHeight="1.5dp"
+        android:minHeight="1.5dp"
+        android:progressDrawable="@drawable/nn_player_seek_progress"
+        android:thumb="@drawable/nn_player_seek_thumb"
+        android:visibility="gone"
+        />
+
+
+    <!-- 去除paddingStart,paddingEnd,thumbOffset属性后(透明背景)-->
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:max="100"
+        android:maxHeight="1.5dp"
+        android:minHeight="1.5dp"
+        android:progressDrawable="@drawable/nn_player_seek_progress"
+        android:thumb="@drawable/nn_player_seek_thumb"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:thumbOffset="-8dp"
+        />
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        />
+
+    <!--设置了style,其实这个其他类型的style很多也是继承android:Widget.Holo.ProgressBar.Horizontal这个style
+     开发中最好不要加这个style,直接写属性-->
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminateDrawable="@drawable/nn_room_video_loading_anim"
+        />
+
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminateDrawable="@drawable/sample_footer_loading_progress"
+        />
+
+    <ProgressBar
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:indeterminateDrawable="@drawable/icon_loading_progress"
+        />
+</LinearLayout>

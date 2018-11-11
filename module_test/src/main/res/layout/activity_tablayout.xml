@@ -9,11 +9,15 @@
     <android.support.design.widget.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         app:tabTextColor="#898888"
         app:tabPaddingStart="0dp"
         app:tabPaddingEnd="0dp"
+        app:tabPaddingTop="0dp"
+        app:tabPaddingBottom="0dp"
+        android:background="@drawable/nn_circle_rect_bg"
         app:tabIndicatorColor="@color/red"
+        app:tabIndicatorGravity="bottom"
         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">
 
     </android.support.design.widget.TabLayout>

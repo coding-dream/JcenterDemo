@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- 设置为46和TabLayout设置的一致，为了预览图容易调试,每个Tab的真实高度就是TabLayout的高度 -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="46dp"
-    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
     <TextView
         android:id="@+id/tab_text"
         android:text="Profile"
         android:gravity="center"
-        android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:textColor="@color/default_theme_text_004"
-        android:textSize="14sp" />
-    <View
-        android:layout_alignParentBottom="true"
-        android:background="#ebeced"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"/>
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:background="@color/google_blue"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>
