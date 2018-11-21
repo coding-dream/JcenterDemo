@@ -1,33 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="40dp"
-        android:layout_height="25dp"
-        android:checked="true"
-        android:textOff=""
-        android:textOn=""
-        android:background="@drawable/nn_common_toggle_selector"
-        />
-
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/toggleButton"
-        android:layout_marginTop="122dp"
-        />
-
-    <SeekBar
+    <ProgressBar
+        android:id="@+id/bottom_progress_portrait"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tv_name"
-        android:paddingStart="0dp"
-        android:paddingEnd="0dp"
-        android:thumbOffset="0dp"
+        android:layout_height="1.5dp"
+        android:max="100"
+        android:progressDrawable="@drawable/nn_player_seek_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
-</android.support.constraint.ConstraintLayout>
+
+    <include layout="@layout/layout_1"/>
+</FrameLayout>

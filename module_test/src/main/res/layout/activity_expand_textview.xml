@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_toggle"
+        android:text="toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.live.ui.expand_textview.ExpandableTextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fcc"
+            android:textSize="14sp"
+            tools:text="Aries are go-getters! Whether it’s business, social or love, Aries lives for the love of the challenge and the chase. You love to achieve the impossible, and when you do, it creates enormous amounts of enthusiasm within yourself and the passion and motivation to achieve even more. As a self-starter, you are a natural leader who works best in a team environment. When you are inspired and mix with the right people, nothing is too hard or impossible!" />
+
+        <TextView
+            android:id="@+id/tv_read_more"
+            android:layout_gravity="right"
+            android:textColor="#131313"
+            android:text="read more"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

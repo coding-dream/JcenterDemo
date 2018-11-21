@@ -25,5 +25,10 @@
         <activity android:name=".activity.SeekbarProgressActivity" />
         <activity android:name=".activity.ShapeDrawableActivity" />
         <activity android:name=".activity.SkillActivity" />
+        <activity android:name=".activity.RotateActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ExpandTextViewActivity" />
     </application>
 </manifest>
