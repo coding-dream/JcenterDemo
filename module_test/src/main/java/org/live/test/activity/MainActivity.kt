@@ -17,6 +17,6 @@ class MainActivity : AppCompatActivity() {
 
         SkinCompatManager.getInstance().loadSkin("module_skin-debug.skin", SkinCompatManager.SKIN_LOADER_STRATEGY_ASSETS)
 
-        startActivity<ExpandTextViewActivity>()
+        startActivity<MeasureActivity>()
     }
 }

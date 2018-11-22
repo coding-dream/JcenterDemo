@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlowLayout">
+        <attr name="hSpace" format="dimension" />
+        <attr name="vSpace" format="dimension" />
+        <attr name="mTextSize" format="dimension" />
+        <attr name="mTextColor" format="color" />
+        <attr name="mTvBackground" format="reference" />
+        <attr name="mTextPaddingH" format="dimension" />
+        <attr name="mTextPaddingV" format="dimension" />
+    </declare-styleable>
+</resources>

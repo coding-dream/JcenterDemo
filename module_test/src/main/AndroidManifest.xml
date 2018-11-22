@@ -30,5 +30,6 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" />
         <activity android:name=".activity.ExpandTextViewActivity" />
+        <activity android:name=".activity.MeasureActivity" />
     </application>
 </manifest>

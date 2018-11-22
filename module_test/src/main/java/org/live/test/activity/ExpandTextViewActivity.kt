@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.view.ViewTreeObserver
 import kotlinx.android.synthetic.main.activity_expand_textview.*
 import org.live.test.R
-import org.live.test.database.Logger
 import org.live.ui.expand_textview.ExpandableTextView
 import org.live.ui.expand_textview.TextState
 
@@ -36,8 +35,6 @@ class ExpandTextViewActivity : AppCompatActivity() {
             tv_text.maxLines = Integer.MAX_VALUE
             tv_text.viewTreeObserver.addOnPreDrawListener(object : ViewTreeObserver.OnPreDrawListener {
                 override fun onPreDraw(): Boolean {
-                    Logger.d("=============> this here")
-
                     // 这个回调会调用多次，获取完行数记得注销监听
                     tv_text.viewTreeObserver.removeOnPreDrawListener(this)
 
