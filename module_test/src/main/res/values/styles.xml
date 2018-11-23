@@ -1,3 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--底部弹出型对话框动画-->
+    <style name="dialogAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/nn_dialog_push_in</item>
+        <item name="android:windowExitAnimation">@anim/nn_dialog_push_out</item>
+    </style>
+
+    <!--侧边弹出型 right-left 对话框动画-->
+    <style name="dialogR2LAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/nn_dialog_r2l_in</item>
+        <item name="android:windowExitAnimation">@anim/nn_dialog_r2l_out</item>
+    </style>
+
+    <!--中部弹出型对话框动画-->
+    <style name="dialogDuangAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/nn_dialog_duang_in</item>
+        <item name="android:windowExitAnimation">@anim/nn_dialog_duang_out</item>
+    </style>
+
 </resources>

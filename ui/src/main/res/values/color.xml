@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorAccent">#1029c8</color>
+
+    <!--loadingView-->
+    <color name="loading_bg">#99000000</color>
+    <color name="loading_center">#aa000000</color>
+
 </resources>

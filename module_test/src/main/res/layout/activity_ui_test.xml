@@ -4,15 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ProgressBar
-        android:id="@+id/bottom_progress_portrait"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="1.5dp"
-        android:max="100"
-        android:progressDrawable="@drawable/nn_player_seek_progress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
-
-    <include layout="@layout/layout_1"/>
+    <org.live.ui.LoadingView_V2
+        android:id="@+id/loadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </FrameLayout>

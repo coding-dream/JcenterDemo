@@ -15,11 +15,11 @@ import org.live.test.R;
 /**
  * Created by wl on 2018/9/26.
  */
-public class DialogSuccess extends Dialog {
+public class DownloadDialog extends Dialog {
 
     private boolean isLanscape = false;
 
-    public DialogSuccess(@NonNull Context context) {
+    public DownloadDialog(@NonNull Context context) {
         super(context);
         setCanceledOnTouchOutside(true);
     }
@@ -37,6 +37,10 @@ public class DialogSuccess extends Dialog {
         } else {
             super.show();
         }
+        handleBaseWindow();
+    }
+
+    private void handleBaseWindow() {
         Window window = getWindow();
         if (window != null) {
             window.setGravity(Gravity.CENTER);

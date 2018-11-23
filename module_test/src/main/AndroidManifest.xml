@@ -32,5 +32,6 @@
         <activity android:name=".activity.ExpandTextViewActivity" />
         <activity android:name=".activity.MeasureActivity" />
         <activity android:name=".activity.PullToRefreshActivity" />
+        <activity android:name=".activity.DialogFragmentActivity" />
     </application>
 </manifest>

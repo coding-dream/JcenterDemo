@@ -60,4 +60,8 @@
         <attr format="boolean" name="tb_is_show_bottom_separator"/>
     </declare-styleable>
 
+    <declare-styleable name="FaceLoadingView">
+        <attr name="loading_image" format="reference"/>
+    </declare-styleable>
+
 </resources>
