@@ -8,7 +8,6 @@ import android.provider.Settings;
 import android.view.OrientationEventListener;
 
 import org.live.test.App;
-import org.live.test.database.Logger;
 
 /**
  * Created by wl on 2018/11/14.
@@ -63,7 +62,6 @@ public class RotateManager {
         public void onOrientationChanged(int orientation) {
             // 不能旋转时不处理
             if (orientation == OrientationEventListener.ORIENTATION_UNKNOWN || !canRotate() || mOnOrientationChangeListener == null) {
-                Logger.d("=======> can't rotate!");
                 return;
             }
 

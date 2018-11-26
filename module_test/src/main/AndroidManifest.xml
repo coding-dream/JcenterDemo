@@ -12,7 +12,6 @@
         </activity>
         <activity android:name=".activity.TestActivity" />
         <activity android:name=".activity.StaggeredGridActivity" />
-        <activity android:name=".activity.GreenDaoActivity" />
         <activity android:name=".activity.HttpApiActivity" />
         <activity android:name=".activity.RvPagerActivity" />
         <activity android:name=".activity.ViewPagerActivity" />

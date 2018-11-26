@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_rotate.*
 import org.live.test.R
-import org.live.test.database.Logger
 import org.live.test.util.RotateManager
 
 /**
@@ -53,10 +52,10 @@ class RotateActivity : AppCompatActivity() {
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            Logger.dd("vvvv", "===========> 横屏")
+            // Logger.dd("vvvv", "===========> 横屏")
         }
         if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            Logger.dd("vvvv","===========> 竖屏")
+            // Logger.dd("vvvv","===========> 竖屏")
         }
     }
 

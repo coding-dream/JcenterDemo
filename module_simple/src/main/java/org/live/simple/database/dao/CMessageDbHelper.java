@@ -1,9 +1,9 @@
-package org.live.test.database.dao;
+package org.live.simple.database.dao;
 
 import org.greenrobot.greendao.query.QueryBuilder;
-import org.live.test.database.DBDaoSession;
-import org.live.test.database.entity.CMessage;
-import org.live.test.database.gen.CMessageDao;
+import org.live.simple.database.DBDaoSession;
+import org.live.simple.database.entity.CMessage;
+import org.live.simple.database.gen.CMessageDao;
 
 import java.util.List;
 

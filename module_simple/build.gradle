@@ -6,8 +6,6 @@ apply plugin: 'org.greenrobot.greendao'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
-
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -42,14 +40,22 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':ui')
+    implementation DepHelper.constraint_layout
+    implementation DepHelper.appcompat_v7
+    implementation DepHelper.support_v4
+    implementation DepHelper.recyclerview_v7
+    implementation DepHelper.cardview_v7
 
-    // ButterKnife
+    // ButterKnife(ButterKnife和GreenDao用的时候在当前App的gradle中添加即可,因为需要用到apt或者apply plugin)
     implementation DepHelper.butterknife
     kapt DepHelper.annotationProcessor_butterknife
+
+    // GreenDao
+    implementation DepHelper.greendao
+
 }
 
 greendao {
     schemaVersion 1 // database version
-    daoPackage 'org.live.test.database.gen'
+    daoPackage 'org.live.simple.database.gen'
 }

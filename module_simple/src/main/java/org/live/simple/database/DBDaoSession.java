@@ -1,8 +1,9 @@
-package org.live.test.database;
+package org.live.simple.database;
 
-import org.live.test.App;
-import org.live.test.database.gen.DaoMaster;
-import org.live.test.database.gen.DaoSession;
+
+import org.live.simple.App;
+import org.live.simple.database.gen.DaoMaster;
+import org.live.simple.database.gen.DaoSession;
 
 public class DBDaoSession {
     private static final String DB_NAME = "nkt_db";

@@ -85,11 +85,4 @@ dependencies {
     api DepHelper.skin_support
 
     api DepHelper.design
-
-    // GreenDao
-    api DepHelper.greendao
-
-    // ButterKnife
-    api DepHelper.butterknife
-    kapt DepHelper.annotationProcessor_butterknife
 }

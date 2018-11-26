@@ -6,3 +6,4 @@ include "baselib"
 include "ui"
 include ':module_test'
 include ':module_skin'
+include ':module_simple'

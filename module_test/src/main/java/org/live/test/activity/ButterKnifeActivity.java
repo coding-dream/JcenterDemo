@@ -14,8 +14,6 @@ import butterknife.ButterKnife;
 
 /**
  * Created by wl on 2018/11/2.
- *
- * ButterKnife 这个库在本项目中无法使用,fuck,不知道是否和那个库冲突了, 下面的代码仅供参考.
  */
 public class ButterKnifeActivity extends AppCompatActivity {
 

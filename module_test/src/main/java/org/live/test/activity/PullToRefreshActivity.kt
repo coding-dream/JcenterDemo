@@ -16,7 +16,6 @@ import org.live.baselib.util.SystemUtils
 import org.live.test.R
 import org.live.test.adapter.UserAdapter
 import org.live.test.bean.User
-import org.live.test.database.Logger
 import org.live.test.widget.MyVerticalLoadMoreView
 
 /**
@@ -100,7 +99,6 @@ class PullToRefreshActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshL
     private var errorIndex = 0
 
     private fun requestData() {
-        Logger.d("errorIndex: $errorIndex")
 
         val refreshStated = if(currPage == 1) STATE_REFRESH_COMPLETE else STATE_LOADMORE_COMPLETE
 

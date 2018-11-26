@@ -1,9 +1,9 @@
-package org.live.test.database;
+package org.live.simple.database;
 
 import android.content.Context;
 
 import org.greenrobot.greendao.database.Database;
-import org.live.test.database.gen.DaoMaster;
+import org.live.simple.database.gen.DaoMaster;
 
 import java.util.Set;
 import java.util.SortedMap;

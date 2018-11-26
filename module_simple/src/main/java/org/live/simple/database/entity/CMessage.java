@@ -1,4 +1,4 @@
-package org.live.test.database.entity;
+package org.live.simple.database.entity;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
