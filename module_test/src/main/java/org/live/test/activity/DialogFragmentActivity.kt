@@ -2,6 +2,9 @@ package org.live.test.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_dialog.*
+import org.live.baselib.toast
+import org.live.baselib.util.SystemUtils
 import org.live.test.R
 import org.live.test.widget.MenuDialogFragment
 
@@ -21,7 +24,6 @@ class DialogFragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dialog)
-
         MenuDialogFragment.display(supportFragmentManager, "dong")
         MenuDialogFragment.display(supportFragmentManager, "dong")
         MenuDialogFragment.display(supportFragmentManager, "dong")

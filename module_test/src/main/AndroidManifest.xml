@@ -33,5 +33,7 @@
         <activity android:name=".activity.MeasureActivity" />
         <activity android:name=".activity.PullToRefreshActivity" />
         <activity android:name=".activity.DialogFragmentActivity" />
+        <activity android:name=".activity.DecorViewActivity" />
+        <activity android:name=".activity.ButterKnifeActivity" />
     </application>
 </manifest>

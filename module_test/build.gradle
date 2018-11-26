@@ -42,7 +42,6 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':ui')
-    implementation project(':baselib')
 }
 
 greendao {

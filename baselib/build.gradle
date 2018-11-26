@@ -58,9 +58,6 @@ dependencies {
     // EventBus
     api DepHelper.eventbus
 
-    // ButterKnife
-    api DepHelper.butterknife
-    kapt DepHelper.annotationProcessor_butterknife
     api DepHelper.multi_type
 
     api DepHelper.gson
@@ -84,11 +81,15 @@ dependencies {
     // Glide
     api DepHelper.glide
 
-    // GreenDao
-    api DepHelper.greendao
-
     // 换肤测试
     api DepHelper.skin_support
 
     api DepHelper.design
+
+    // GreenDao
+    api DepHelper.greendao
+
+    // ButterKnife
+    api DepHelper.butterknife
+    kapt DepHelper.annotationProcessor_butterknife
 }
