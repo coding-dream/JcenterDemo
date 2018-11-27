@@ -64,4 +64,26 @@
         <attr name="loading_image" format="reference"/>
     </declare-styleable>
 
+    <declare-styleable name="CircleIndicator">
+        <attr name="spacing" format="dimension" />
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_animator" format="reference"/>
+        <attr name="ci_animator_reverse" format="reference"/>
+        <attr name="ci_drawable" format="reference"/>
+        <attr name="ci_drawable_unselected" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="XCircleIndicator">
+        <!-- 被选中圆点的颜色 -->
+        <attr name="xfillColor" format="color" />
+        <!-- 未选中圆点的颜色 -->
+        <attr name="xstrokeColor" format="color" />
+        <!-- 圆点的大小 -->
+        <attr name="xradius" format="dimension" />
+        <!-- 圆点间间距的大小 -->
+        <attr name="xcircleInterval" format="dimension" />
+    </declare-styleable>
+
 </resources>

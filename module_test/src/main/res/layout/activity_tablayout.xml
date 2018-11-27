@@ -15,7 +15,7 @@
         app:tabPaddingEnd="0dp"
         app:tabPaddingTop="0dp"
         app:tabPaddingBottom="0dp"
-        android:background="@drawable/nn_circle_rect_bg"
+        android:background="@drawable/zz_circle_rect_bg"
         app:tabIndicatorColor="@color/red"
         app:tabIndicatorGravity="bottom"
         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">

@@ -19,8 +19,8 @@
         android:paddingStart="0dp"
         android:paddingEnd="0dp"
         android:thumbOffset="0dp"
-        android:progressDrawable="@drawable/nn_player_seek_progress"
-        android:thumb="@drawable/nn_player_seek_thumb"
+        android:progressDrawable="@drawable/zz_player_seek_progress"
+        android:thumb="@drawable/zz_player_seek_thumb"
         />
 
     <!-- 去除paddingStart,paddingEnd,thumbOffset属性后(无背景) -->
@@ -31,8 +31,8 @@
         android:max="100"
         android:maxHeight="1.5dp"
         android:minHeight="1.5dp"
-        android:progressDrawable="@drawable/nn_player_seek_progress"
-        android:thumb="@drawable/nn_player_seek_thumb"
+        android:progressDrawable="@drawable/zz_player_seek_progress"
+        android:thumb="@drawable/zz_player_seek_thumb"
         android:visibility="gone"
         />
 
@@ -45,8 +45,8 @@
         android:max="100"
         android:maxHeight="1.5dp"
         android:minHeight="1.5dp"
-        android:progressDrawable="@drawable/nn_player_seek_progress"
-        android:thumb="@drawable/nn_player_seek_thumb"
+        android:progressDrawable="@drawable/zz_player_seek_progress"
+        android:thumb="@drawable/zz_player_seek_thumb"
         android:paddingStart="0dp"
         android:paddingEnd="0dp"
         android:thumbOffset="-8dp"
@@ -65,7 +65,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:indeterminateDrawable="@drawable/nn_room_video_loading_anim"
+        android:indeterminateDrawable="@drawable/zz_room_video_loading_anim"
         />
 
     <ProgressBar

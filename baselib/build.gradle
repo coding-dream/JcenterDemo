@@ -85,4 +85,7 @@ dependencies {
     api DepHelper.skin_support
 
     api DepHelper.design
+
+    // banner
+    api DepHelper.banner
 }

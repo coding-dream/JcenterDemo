@@ -34,5 +34,8 @@
         <activity android:name=".activity.DialogFragmentActivity" />
         <activity android:name=".activity.DecorViewActivity" />
         <activity android:name=".activity.ButterKnifeActivity" />
+        <activity android:name=".activity.BannerActivity" />
+        <activity android:name=".activity.CircleIndicatorActivity" />
+        <activity android:name=".activity.CircleIndicatorActivity_V2" />
     </application>
 </manifest>
