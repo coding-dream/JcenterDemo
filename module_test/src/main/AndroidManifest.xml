@@ -37,5 +37,6 @@
         <activity android:name=".activity.BannerActivity" />
         <activity android:name=".activity.CircleIndicatorActivity" />
         <activity android:name=".activity.CircleIndicatorActivity_V2" />
+        <activity android:name=".activity.BottomMenuActivity" />
     </application>
 </manifest>

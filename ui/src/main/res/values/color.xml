@@ -6,4 +6,7 @@
     <color name="loading_bg">#99000000</color>
     <color name="loading_center">#aa000000</color>
 
+    <color name="common_list_item_bg_pressed_color">#ffd8d8d8</color>
+    <color name="common_list_item_bg_normal_color">#fffeffff</color>
+
 </resources>
