@@ -44,5 +44,8 @@
         <activity android:name=".activity.ErrorSlowlyActivity" />
         <activity android:name=".activity.ToastActivity" />
         <activity android:name=".activity.DelayHanlderActivity" />
+        <activity android:name=".activity.ViewDragLayoutActivity" />
+        <activity android:name=".activity.AroundLayoutActivity" />
+        <activity android:name=".activity.OverflowActivity" />
     </application>
 </manifest>

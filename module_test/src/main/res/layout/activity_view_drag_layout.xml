@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.live.ui.ViewDragLayout
+        android:id="@+id/viewDragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#fcc"
+            android:id="@+id/layout_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:text="content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 这里必须设置宽度, 否则ViewDragLayout因为没有空间, 导致给此控件的宽度是0 -->
+        <LinearLayout
+            android:id="@+id/layout_behind"
+            android:background="#f00"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="80dp">
+            <TextView
+                android:text="QQ侧滑菜单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </org.live.ui.ViewDragLayout>
+
+</LinearLayout>
