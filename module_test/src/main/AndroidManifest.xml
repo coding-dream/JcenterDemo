@@ -41,8 +41,8 @@
         <activity android:name=".activity.CircleIndicatorActivity" />
         <activity android:name=".activity.CircleIndicatorActivity_V2" />
         <activity android:name=".activity.BottomMenuActivity" />
-        <activity android:name=".activity.ErrorActivity" />
         <activity android:name=".activity.ErrorSlowlyActivity" />
         <activity android:name=".activity.ToastActivity" />
+        <activity android:name=".activity.DelayHanlderActivity" />
     </application>
 </manifest>

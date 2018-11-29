@@ -4,7 +4,7 @@ import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_toast.*
 import org.live.test.R
 import org.live.test.base.BaseActivity
-import org.live.test.widget.ToastTipWindow
+import org.live.test.widget.ToastTipWindowDelay
 
 /**
  * Created by wl on 2018/11/28.
@@ -19,7 +19,7 @@ import org.live.test.widget.ToastTipWindow
  */
 class ToastActivity : BaseActivity() {
 
-    private val toastTipWindow = ToastTipWindow()
+    private val toastTipWindow = ToastTipWindowDelay()
 
     override fun initView() {
         val textView = TextView(this)

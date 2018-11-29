@@ -14,7 +14,7 @@ import org.live.baselib.util.SystemUtils;
 /**
  * Created by wl on 2018/11/29.
  */
-public class ToastTipWindow {
+public class ToastTipWindowDelay {
 
     private int left;
     private int top;
@@ -29,14 +29,14 @@ public class ToastTipWindow {
      * 1. 获取锚点View相对于屏幕的坐标点(需要减去 statusBar的高度)
      * 2. 获取父节点(不包含statusBar)
      * @param activity
-     * @param view
+     * @param anchorView
      */
-    private void init(Activity activity, View view) {
+    private void init(Activity activity, View anchorView) {
         int statusBarHeight = SystemUtils.getStatusBarHeight(activity);
 
         if (!hasInit) {
             int location[] = new int[2];
-            view.getLocationOnScreen(location);
+            anchorView.getLocationOnScreen(location);
             int x = location[0];
             int y = location[1];
             left = x;
