@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.live.test" >
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
         android:name="App"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -38,5 +41,8 @@
         <activity android:name=".activity.CircleIndicatorActivity" />
         <activity android:name=".activity.CircleIndicatorActivity_V2" />
         <activity android:name=".activity.BottomMenuActivity" />
+        <activity android:name=".activity.ErrorActivity" />
+        <activity android:name=".activity.ErrorSlowlyActivity" />
+        <activity android:name=".activity.ToastActivity" />
     </application>
 </manifest>

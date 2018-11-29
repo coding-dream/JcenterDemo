@@ -9,6 +9,8 @@ import org.live.test.base.BaseActivity
 
 /**
  * Created by wl on 2018/11/26.
+ *
+ * android.R.id.content是不包含状态栏55px的, 正好配合 ToastActivity 中的 getLocationOnScreen 动态添加布局
  */
 class DecorViewActivity : BaseActivity() {
 

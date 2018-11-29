@@ -4,6 +4,8 @@ import android.view.animation.Interpolator
 
 /**
  * Created by wl on 2018/10/22.
+ *
+ * 动画差值器的计算公式: 起始值 + (终点值 - ) * 显示进度
  */
 class SlowlyInterpolator : Interpolator {
 
