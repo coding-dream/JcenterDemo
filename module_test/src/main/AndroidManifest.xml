@@ -47,5 +47,8 @@
         <activity android:name=".activity.ViewDragLayoutActivity" />
         <activity android:name=".activity.AroundLayoutActivity" />
         <activity android:name=".activity.OverflowActivity" />
+        <activity android:name=".activity.AppGlobalActivity" />
+        <activity android:name=".activity.LayoutManagerActivity" />
+        <activity android:name=".activity.DialogActivity" />
     </application>
 </manifest>

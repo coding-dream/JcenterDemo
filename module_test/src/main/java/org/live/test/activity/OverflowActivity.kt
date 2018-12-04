@@ -28,5 +28,4 @@ class OverflowActivity : BaseActivity() {
     override fun getLayoutId(): Int {
         return R.layout.activity_overflow
     }
-
 }
