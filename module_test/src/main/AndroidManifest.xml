@@ -50,5 +50,6 @@
         <activity android:name=".activity.AppGlobalActivity" />
         <activity android:name=".activity.LayoutManagerActivity" />
         <activity android:name=".activity.DialogActivity" />
+        <activity android:name=".activity.GestureDetectorActivity" />
     </application>
 </manifest>
