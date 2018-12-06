@@ -7,3 +7,5 @@ include "ui"
 include ':module_test'
 include ':module_skin'
 include ':module_simple'
+include ':module_empty'
+include ':module_lib_player'

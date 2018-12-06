@@ -18,6 +18,11 @@ public class GestureDetectorActivity extends BaseActivity {
 
     private static final String TAG = GestureDetectorActivity.class.getSimpleName();
 
+    // fling 的最小距离100px
+    private static final float FLING_MIN_DISTANCE = 100;
+    // fling 的最小速度 100px/s
+    private static final float FLING_MIN_VELOCITY = 100;
+
     @BindView(R.id.rootLayout)
     View rootLayout;
 
@@ -83,6 +88,21 @@ public class GestureDetectorActivity extends BaseActivity {
             public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
                 // onDown -> onScroll -> onScroll -> onScroll
                 LogHelper.d(TAG, "onScroll");
+                // distanceX 和 distanceY 一般情况下和 e1.getX - e2.getX 的一致, e1是ACTION_DOWN的初次按下的值)
+                // distanceX 是 (上次事件坐标 - 当前事件坐标)
+                // (手指)向右滑动为负值, 手指向左滑动为正值
+                // (手指)向下滑动为负值, 手指向上滑动为正值
+
+                // 注意: onScroll计算得道的距离和我们自己在onTouch里面计算得到的有细微的差别. 不过影响不大.
+                // 注意处理第一次 distanceX,distanceY 第一次的值不具备参考价值(即忽略处理第一次onScroll)(比如我们自己在onTouchEvent中判定的时候, 第一次的LastX,lastY还未赋值, 无法与e2相减).
+                // 多数情况下, 我们不用GestureDetectorCompat提供的这个方法, 用onTouchEvent里面处理更好.
+
+                // 注意一个闪动的Bug, 即如果整个控件重写的是onTouchEvent(),那么event.getX() 和event.getRawX()均可.
+                // 但是如果是customView.setOnTouchListener(), distanceX + distanceY计算用 event.getRawX() + event.getRawY(), 否则会出现闪动Bug.
+                // 同理, 委派给GestureDetectorCompat的时候就要在onTouchEvent里面委派而不是onTouchListener中委派(因为一边计算自己距离父控件的事件距离,一边让父控件移动自己, 必然造成闪烁).
+
+                // 注意: 通过scrollBy方式移动子View, View.getLeft(), View.getTop()不会改变.
+                LogHelper.d(TAG, "distanceX: " + distanceX);
                 return false;
             }
 
@@ -99,14 +119,21 @@ public class GestureDetectorActivity extends BaseActivity {
                 // 快速fling屏幕, 松手后只会触发一次
                 // onDown -> onScroll -> onScroll -> onScroll -> onScroll -> onFling
                 LogHelper.d(TAG, "onFling");
-                return false;
+
+                if (e1.getX() - e2.getX() > FLING_MIN_DISTANCE && Math.abs(velocityX) > FLING_MIN_VELOCITY) {
+                    // 向左滑动
+                    LogHelper.d(TAG, "left fling");
+                } else if (e2.getX() - e1.getX() > FLING_MIN_DISTANCE && Math.abs(velocityX) > FLING_MIN_VELOCITY) {
+                    // 向右滑动
+                    LogHelper.d(TAG, "right fling");
+                }
+                return true;
             }
         });
         // 解决长按屏幕后无法拖动的问题(禁用长按事件)
         gestureDetectorCompat.setIsLongpressEnabled(false);
         // 恢复长按事件
-        gestureDetectorCompat.setIsLongpressEnabled(true);
-
+        // gestureDetectorCompat.setIsLongpressEnabled(true);
 
         rootLayout.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
