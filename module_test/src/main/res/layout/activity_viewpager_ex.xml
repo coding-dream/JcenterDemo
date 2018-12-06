@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.live.ui.ViewPagerEx
+        android:id="@+id/viewPagerEx"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="content1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="content2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </org.live.ui.ViewPagerEx>
+</android.support.constraint.ConstraintLayout>
