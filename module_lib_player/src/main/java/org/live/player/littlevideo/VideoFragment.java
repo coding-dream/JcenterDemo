@@ -7,7 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
+import org.live.player.AbstractVideoController;
 import org.live.player.R;
 import org.live.player.SimpleController;
 import org.live.player.VideoItem;
@@ -19,6 +21,7 @@ import org.live.player.ZZVideoPlayer;
 public class VideoFragment extends Fragment {
 
     private ZZVideoPlayer zzVideoPlayer;
+    private ProgressBar progressBar;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,6 +38,7 @@ public class VideoFragment extends Fragment {
 
     private void initView(View rootView) {
         zzVideoPlayer = rootView.findViewById(R.id.zzVideoPlayer);
+        progressBar = rootView.findViewById(R.id.progressBar);
         autoPlay();
     }
 
@@ -45,8 +49,24 @@ public class VideoFragment extends Fragment {
         viewItem.setCover("http://img1.c.yinyuetai.com/video/mv/181127/0/b8af67fe6265f1497a6afb271a21ecf6_240x135.jpg");
 
         zzVideoPlayer.setPlayerType(ZZVideoPlayer.TYPE_IJK);
-        zzVideoPlayer.setController(new SimpleController(getActivity()), null);
+        zzVideoPlayer.setController(new SimpleController(getActivity()), new AbstractVideoController.VideoCallback() {
+            @Override
+            public void onBack() {
+
+            }
+
+            @Override
+            public void onPrepared() {
+                progressBar.setVisibility(View.GONE);
+            }
+        });
         zzVideoPlayer.setUp(viewItem, null, false);
         zzVideoPlayer.start();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        zzVideoPlayer.pause();
     }
 }

@@ -19,7 +19,13 @@ public class SimpleController extends AbstractVideoController {
 
     @Override
     public void onPlayStateChanged(int mCurrentState) {
-
+        switch (mCurrentState) {
+            case ZZVideoPlayer.STATE_PREPARED:
+                if (mVideoCallback != null) {
+                    mVideoCallback.onPrepared();
+                }
+                break;
+        }
     }
 
     @Override

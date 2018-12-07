@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Scroller;
 import android.widget.Toast;
-
 import org.live.player.R;
 import org.live.player.util.LogHelper;
 
@@ -32,8 +31,10 @@ public class SwipeFlingScaleLayout extends FrameLayout {
     private GestureDetectorCompat gestureDetectorCompat;
     private Scroller mScroller;
 
-    private boolean isScaleView;
-    private boolean judgeOrientation;
+    private int orientation = 0;
+
+    private static final int SCROLL_AXIS_HORIZONTAL = 1;
+    private static final int SCROLL_AXIS_VERTICAL = 2;
 
     private boolean firstScroll = true;
     private View swipeFlingScaleLayout;
@@ -89,16 +90,13 @@ public class SwipeFlingScaleLayout extends FrameLayout {
                     firstScroll = false;
                     return true;
                 }
-                if (distanceY < 0 && !judgeOrientation) {
-                    isScaleView = true;
-                    judgeOrientation = true;
-                }
-                if (isScaleView) {
+                if (orientation == SCROLL_AXIS_VERTICAL) {
                     handleScale(distanceX, distanceY);
                     return true;
-                } else {
+                } else if(orientation == SCROLL_AXIS_HORIZONTAL) {
                     return false;
                 }
+                return false;
             }
 
             @Override
@@ -119,7 +117,6 @@ public class SwipeFlingScaleLayout extends FrameLayout {
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
         boolean intercepted = false;
-        LogHelper.d("onInterceptTouchEvent");
         int x = (int) event.getX();
         int y = (int) event.getY();
 
@@ -133,13 +130,15 @@ public class SwipeFlingScaleLayout extends FrameLayout {
             case MotionEvent.ACTION_MOVE:
                 int deltaX = x - mLastX;
                 int deltaY = y - mLastY;
-                LogHelper.d("ACTION MOVE: " + Math.abs(deltaX) + " " + Math.abs(deltaY));
 
                 if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > 20) {
                     intercepted = true;
+                    orientation = SCROLL_AXIS_VERTICAL;
                 } else {
                     intercepted = false;
+                    orientation = SCROLL_AXIS_HORIZONTAL;
                 }
+                LogHelper.d("ACTION MOVE: " + Math.abs(deltaX) + " " + Math.abs(deltaY) + " intercepted: " + intercepted);
                 break;
             case MotionEvent.ACTION_UP:
                 intercepted = false;
@@ -157,13 +156,12 @@ public class SwipeFlingScaleLayout extends FrameLayout {
             switch (event.getAction() & MotionEvent.ACTION_MASK) {
                 case MotionEvent.ACTION_UP:
                     firstScroll = true;
-                    isScaleView = false;
-                    judgeOrientation = false;
-
                     dismissMe();
                     break;
                 case MotionEvent.ACTION_MOVE:
-                    return gestureDetectorCompat.onTouchEvent(event);
+                    LogHelper.d("onTouch: ACTION_MOVE");
+                    gestureDetectorCompat.onTouchEvent(event);
+                    return true;
                 default:
                     break;
             }
@@ -210,8 +208,8 @@ public class SwipeFlingScaleLayout extends FrameLayout {
         layoutRoot.setAlpha(1);
         layoutRoot.setScaleX(1);
         layoutRoot.setScaleY(1);
-
-        mScroller.startScroll(0, 0, 0, 0, 1000);
+        // 注意这个时间会多少影响下一次滑动判断,所以尽量设置短一些.
+        mScroller.startScroll(0, 0, 0, 0, 200);
         invalidate();
     }
 
