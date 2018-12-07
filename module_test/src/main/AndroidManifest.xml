@@ -52,5 +52,6 @@
         <activity android:name=".activity.DialogActivity" />
         <activity android:name=".activity.GestureDetectorActivity" />
         <activity android:name=".activity.ViewPagerExActivity" />
+        <activity android:name=".activity.SimpleVideoListActivity" />
     </application>
 </manifest>

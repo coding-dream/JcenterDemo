@@ -43,6 +43,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':ui')
+    implementation project(':module_lib_player')
 
     // ButterKnife
     implementation DepHelper.butterknife

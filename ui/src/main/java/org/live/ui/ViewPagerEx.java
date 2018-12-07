@@ -171,15 +171,13 @@ public class ViewPagerEx extends ViewGroup {
         int y = (int) event.getY();
 
         switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN: {
-                intercepted = false;
+            case MotionEvent.ACTION_DOWN:
                 if (!mScroller.isFinished()) {
                     mScroller.abortAnimation();
-                    intercepted = true;
                 }
+                intercepted = true;
                 break;
-            }
-            case MotionEvent.ACTION_MOVE: {
+            case MotionEvent.ACTION_MOVE:
                 int deltaX = x - mLastX;
                 int deltaY = y - mLastY;
                 if (Math.abs(deltaX) > Math.abs(deltaY)) {
@@ -188,11 +186,9 @@ public class ViewPagerEx extends ViewGroup {
                     intercepted = false;
                 }
                 break;
-            }
-            case MotionEvent.ACTION_UP: {
+            case MotionEvent.ACTION_UP:
                 intercepted = false;
                 break;
-            }
             default:
                 break;
         }
@@ -209,19 +205,17 @@ public class ViewPagerEx extends ViewGroup {
         int x = (int) event.getX();
         int y = (int) event.getY();
         switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN: {
+            case MotionEvent.ACTION_DOWN:
                 if (!mScroller.isFinished()) {
                     mScroller.abortAnimation();
                 }
                 break;
-            }
-            case MotionEvent.ACTION_MOVE: {
+            case MotionEvent.ACTION_MOVE:
                 int deltaX = x - mLastX;
                 int deltaY = y - mLastY;
                 scrollBy(-deltaX, 0);
                 break;
-            }
-            case MotionEvent.ACTION_UP: {
+            case MotionEvent.ACTION_UP:
                 int scrollX = getScrollX();
                 mVelocityTracker.computeCurrentVelocity(1000);
                 float xVelocity = mVelocityTracker.getXVelocity();
@@ -235,7 +229,6 @@ public class ViewPagerEx extends ViewGroup {
                 smoothScrollBy(dx, 0);
                 mVelocityTracker.clear();
                 break;
-            }
             default:
                 break;
         }
