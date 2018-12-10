@@ -3,7 +3,6 @@ package org.live.test.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import org.jetbrains.anko.startActivity
-import org.live.player.SimpleVideoActivity
 import org.live.test.R
 
 /**
@@ -15,6 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        startActivity<SimpleVideoListActivity>()
+        startActivity<KeyBoardInsureActivityV2>()
     }
 }

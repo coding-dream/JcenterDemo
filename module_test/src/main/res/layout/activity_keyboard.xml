@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.live.test.widget.ResizeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--弹幕，输入框，发送按钮,表情面板-->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:hint="please input text"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#13b1c6"
+                android:text="发送"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 表情面板 Emotion -->
+        <RelativeLayout
+            android:background="#fcc"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:layout_centerInParent="true"
+                android:text="emotion"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</org.live.test.widget.ResizeLayout>

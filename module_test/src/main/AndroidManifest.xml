@@ -53,5 +53,7 @@
         <activity android:name=".activity.GestureDetectorActivity" />
         <activity android:name=".activity.ViewPagerExActivity" />
         <activity android:name=".activity.SimpleVideoListActivity" />
+        <activity android:name=".activity.KeyBoardInsureActivity" />
+        <activity android:name=".activity.KeyBoardInsureActivityV2" />
     </application>
 </manifest>
